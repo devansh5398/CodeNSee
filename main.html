@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Realtime Webpage</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="jScript.js" type="text/javascript"></script>
+
+  </head>
+
+  <body onload="initialize()">
+
+    <div id="textboxes" class="clearfix p-2" onkeyup="update()">
+      <div class="col-md-4 float-md-left mx-auto text-light">
+        <h6 class="px-3" style="border:0.2rem solid #FF3300; border-radius:5rem">HTML</h6>
+        <div class="">
+          <textarea id="html" rows="11" style="border:0.2rem solid #FF3300;"></textarea>
+        </div>
+      </div>
+      <div class="col-md-4 float-md-left mx-auto text-light">
+        <h6 class="px-3" style="border:0.2rem solid #00FFFF; border-radius:5rem">CSS</h6>
+        <div class="">
+          <textarea id="css" rows="11" style="border:0.2rem solid #00FFFF;"></textarea>
+        </div>
+      </div>
+      <div class="col-md-4 float-md-left mx-auto text-light">
+        <h6 class="px-3" style="border:0.2rem solid #FFFF00; border-radius:5rem">JavaScript</h6>
+        <div class="">
+          <textarea id="javascript" rows="11" style="border:0.2rem solid #FFFF00;"></textarea>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="textboxes_shrink btn px-3 mx-5" onclick="hide_textboxes()"><i class='fas fa-compress-arrows-alt'></i></button>
+    <button type="button" class="textboxes_expand btn btn-primary" onclick="show_textboxes()"><i class='fas fa-expand-arrows-alt'></i></button>
+
+    <div id="tools" class="tools text-right py-5 px-4">
+      <!-- Seemingly random attributes necessary for TinyUrl to accept the request -->
+      <div class="font-weight-bolder">
+        <form action="http://tinyurl.com/create.php" method="get" target="_blank">
+      		<input type="hidden" name="url" id="url" />
+          <a href="#" id="link1" class="py-1 px-3" onclick="getShortUrl()">Short Link to Page</a>
+        </form>
+      </div><br>
+      <div class="font-weight-bolder"><a href="#" id="link2" class="py-1 px-3" target="_blank">Open Page</a></div><br>
+      <div class="font-weight-bolder"><a href="#" id="link3" class="py-1 px-3" onclick="copyCode()">Copy Code</a></div><br>
+      <div class="font-weight-bolder"><a href="#" id="link4" class="py-1 px-3" target="_blank" download="export.html">Download Code</a></div>
+    </div>
+    <button type="button" class="tools_slider btn"><i class='fas fa-angle-double-left'></i></button>
+
+    <iframe></iframe>
+
+  </body>
+</html>

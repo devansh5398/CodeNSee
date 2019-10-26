@@ -1,0 +1,10 @@
+<script type="text/javascript">
+if (window.location.hash) {
+  var hash = window.location.hash.slice(1);
+  var data = atob(hash);
+  document.write(decodeURIComponent(data));
+}
+else {
+  window.location.replace("main.html");
+}
+</script>
