@@ -1,4 +1,4 @@
-# Realtime Webpages
+# CodeNSee
 
 It displays web page of user-entered html, css, and javascript code. As the changes are committed in the code, corresponding changes occur in displayed web page alongside.
 
