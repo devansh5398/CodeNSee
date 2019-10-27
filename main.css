@@ -1,0 +1,139 @@
+html, body {
+  height: 100%;
+}
+
+#textboxes {
+  background-color: #0B0C0E;
+  height: 41%;
+  border-bottom: 0.2rem solid #77ff00;
+  overflow: hidden;
+  transform: scale(1,1);
+  transform-origin: 4% 12%;
+  transition: all 0.3s;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 0.8rem;
+  resize: none;
+  font-size: 0.8em;
+}
+
+.textboxes_shrink {
+  position: absolute;
+  top: 40.5%;
+  z-index: 1;
+  border: 0.2rem solid #00FF00;
+  border-top: none;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: #0B0C0E;
+  color: white;
+  transform: scale(1,1);
+  transform-origin: -10% -600%;
+  transition: all 0.3s;
+}
+
+.textboxes_shrink:hover {
+  color: #00FF00;
+}
+
+.textboxes_expand {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  z-index: 1;
+  transform: scale(0,0);
+  transition: all 0.3s;
+}
+
+iframe {
+  position: absolute;
+  top: 41%;
+  width: 100%;
+  height: 58%;
+  border: none;
+  transition: all 0.3s;
+}
+
+.tools_container {
+  position: relative;
+  height: 40.5%;
+  top: 10%;
+}
+
+.tools {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  padding: 3.5vw 1.75vw;
+  width: 21%;
+  background-color: #0B0C0E;
+  opacity: 0.8;
+  border: 0.2rem solid #00FF00;
+  border-right: none;
+  border-radius: 3rem 0 0 12rem;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 0.3s;
+}
+
+.tools a {
+  text-decoration: none;
+  color: white;
+  padding: 0.27vw 1.2vw;
+  font-size: 1.15vw;
+  border-radius: 5rem 3rem 3rem 12rem;
+  transition: all 0.2s;
+}
+
+.div_of_top_3_links {
+  margin-bottom: 1.76vw;
+}
+
+#link1 {
+  border: 0.2rem solid #f50057;
+}
+#link1:hover {
+  background-color: #f50057;
+}
+
+#link2 {
+  border: 0.2rem solid #ffeb3b;
+}
+#link2:hover {
+  background-color: #ffeb3b;
+}
+
+#link3 {
+  border: 0.2rem solid #2196f3;
+}
+#link3:hover {
+  background-color: #2196f3;
+}
+
+#link4 {
+  border: 0.2rem solid #ef6c00;
+}
+#link4:hover {
+  background-color: #ef6c00;
+}
+
+.tools_slider {
+  position: absolute;
+  top: 17%;
+  right: 0%;
+  z-index: 2;
+  padding: 0.5vw 0.82vw;
+  color: white;
+  background-color: #0B0C0E;
+  opacity: 0.8;
+  outline: none;
+  border: 0.2rem solid #00FF00;
+  border-right: 0.2rem solid #0B0C0E;
+  border-radius: 1rem 0 0 1rem;
+  transition: all 0.3s;
+}
+
+.tools_slider:hover {
+  color: #00FF00;
+}
