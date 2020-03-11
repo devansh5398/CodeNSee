@@ -53,7 +53,7 @@ function getHTML(data) {
 
 /* Return a link to view the page */
 function getViewLink(pageData) {
-  return `http://devansh5398.github.io/Realtime-Webpage/#${window.btoa(pageData)}`;
+  return `http://devansh5398.github.io/CodeNSee/#${window.btoa(pageData)}`;
 }
 
 /* Set the TinyUrl form hidden 'url' field to the view URL */
